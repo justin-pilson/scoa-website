@@ -182,6 +182,17 @@ body{margin:0;background:#174336}
 @media (prefers-reduced-motion: reduce){
   .v1 *,.v1 *::after{animation:none !important;transition:none !important}
 }
+/* mobile fit */
+@media (max-width: 860px){
+  .v1{min-height:0;height:calc(100 * min(1vh, 9px));height:max(600px,min(100svh,1000px))}
+  .v1 .hl{font-size:min(17vw,9svh)}
+  .v1 .l1{top:max(96px,13svh)}
+  .v1 .l2{bottom:214px}
+  .v1 .rig{--bw:min(64vw,34svh);--cy:42%}
+  .v1 .foot{bottom:max(20px,3svh);gap:14px}
+  .v1 .lede{font-size:15px;line-height:1.55}
+}
+/* end mobile fit */
 /* about */
 :where(.s1) a{color:#174336}:where(.s1) a:hover{color:#174336}
 .s1{position:relative;min-height:0;box-sizing:border-box;background:#fffdf1;color:#174336;font-family:"Avenir","Avenir Next","Helvetica Neue",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow:hidden;isolation:isolate;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;align-items:center;padding:72px 4vw}
@@ -395,6 +406,20 @@ body{margin:0;background:#174336}
 @media (prefers-reduced-motion: reduce){
   .e2 *,.e2 *::before,.e2 *::after{animation:none !important;transition:none !important}
 }
+/* mobile fit */
+@media (max-width: 900px){
+  .e2 .card,.e2 .card.L{flex-direction:row;flex-wrap:wrap;align-items:flex-start;text-align:left;gap:12px 14px;padding:16px;min-height:0}
+  .e2 .cic{width:44px;height:44px;border-radius:12px}
+  .e2 .ctx{flex:1 1 calc(100% - 58px);gap:4px}
+  .e2 .ctx strong{font-size:19px}
+  .e2 .ctx small{font-size:14px}
+  .e2 .ctx .mdt{display:block}
+  .e2 .cgo,.e2 .card.L .cgo{flex-direction:row;height:40px;margin-left:58px;padding:0 5px 0 14px}
+  .e2 .card.L .cdot svg{transform:none}
+  .e2 .card.L:hover .cdot{transform:rotate(-45deg)}
+  .e2 .card.R:hover,.e2 .card.R.on,.e2 .card.L:hover,.e2 .card.L.on{transform:translateX(4px)}
+}
+/* end mobile fit */
 /* team */
 :where(.t3) a{color:#174336}:where(.t3) a:hover{color:#174336}
 .t{position:relative;box-sizing:border-box;background:#fffdf1;color:#174336;font-family:"Avenir","Avenir Next","Helvetica Neue",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow:hidden;isolation:isolate}
@@ -478,6 +503,11 @@ body{margin:0;background:#174336}
   .t3 .deck{grid-template-columns:repeat(2,minmax(0,1fr))}
   .t3 .k2{display:none}
 }
+/* mobile fit */
+@media (max-width: 900px){
+  .t3 .logos{margin-top:0}
+}
+/* end mobile fit */
 /* careers */
 :where(.k3) a{color:#fffdf1}:where(.k3) a:hover{color:#fffdf1}
 .c{position:relative;box-sizing:border-box;background:#174336;color:#fffdf1;font-family:"Avenir","Avenir Next","Helvetica Neue",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow:hidden;isolation:isolate}
@@ -564,6 +594,25 @@ body{margin:0;background:#174336}
 @keyframes cr-scan{0%{top:-4px;opacity:1}50%{top:calc(100% + 1px);opacity:1}100%{top:-4px;opacity:1}}
 @media (max-width: 1000px){.k3{grid-template-columns:minmax(0,1fr)}.k3 .intro{padding-bottom:0}}
 @media (max-width: 600px){.k3{padding:64px 6vw 48px}.k3 .rack{grid-template-columns:minmax(0,1fr)}.k3 .up.u2{display:none}.k3 .fork .fl{display:none}}
+/* mobile fit */
+@media (max-width: 600px){
+  .k3 .rack{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:14px;padding:22px 14px 0}
+  .k3 .up{width:14px;bottom:34px}
+  .k3 .up.u2{display:block;left:calc(50% - 7px)}
+  .k3 .up::after{left:-3px;right:-3px;height:34px}
+  .k3 .slot{height:150px}
+  .k3 .box{width:94%;height:128px;padding:12px;gap:6px}
+  .k3 .box p,.k3 .ic{display:none}
+  .k3 .hd{justify-content:flex-end}
+  .k3 .tape{left:18px;width:26px;height:22px;margin-left:0}
+  .k3 .box h3{font-size:17px}
+  .k3 .lab{padding:5px 6px;font-size:11px}
+  .k3 .lab .bc{width:38px;height:10px}
+  .k3 .loc{left:8px;gap:6px;height:24px;padding:0 8px 0 6px;font-size:11px}
+  .k3 .loc .bc{width:26px;height:12px}
+  .k3 .floor{margin:0 -14px;margin-right:calc(-14px - 6vw)}
+}
+/* end mobile fit */
 /* footer */
 :where(.fc) a{color:#174336}:where(.fc) a:hover{color:#174336}
 .f{position:relative;box-sizing:border-box;background:#fffdf1;color:#174336;font-family:"Avenir","Avenir Next","Helvetica Neue",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow:hidden;isolation:isolate}
